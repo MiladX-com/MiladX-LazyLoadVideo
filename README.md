@@ -13,28 +13,28 @@ Transparent Video Support: Easily handles transparent video formats by allowing 
 ## ⚙️ How to Use
 Follow these two simple steps to integrate the script into your website.
 
-Step 1: Add the HTML Markup
+### Step 1: Add the HTML Markup
 Add the miladx-lazyvideo class to your <video> tag. Instead of using the src attribute, use data-src to specify the video file's URL.
 
-Method 1: Using the <source> Tag (Recommended)
+#### Method 1: Using the <source> Tag (Recommended)
 This method is ideal for supporting multiple video formats to ensure cross-browser compatibility.
 ```
-<video class="miladx-lazyvideo" poster="https://miladx.com/poster-image.png" autoplay loop playsinline muted>
-  <source data-src="https://miladx.com/transparent-video.mp4" type='video/mp4; codecs="hvc1"'>
-  <source data-src="https://miladx.com/transparent-video.webm" type="video/webm">
+<video class="miladx-lazyvideo" poster="poster.png" loop muted playsinline autoplay webkit-playsinline disablepictureinpicture x-webkit-airplay="deny">
+  <source data-src="transparent-video.webm" type="video/webm">
+  <source data-src="transparent-video.mp4" type='video/mp4; codecs="hvc1"'>
   Your browser does not support the video tag.
 </video>
 ```
 
-Method 2: Using data-src on the <video> Tag
+#### Method 2: Using data-src on the <video> Tag
 Use this method if you only need to specify a single video source.
 ```
-<video class="miladx-lazyvideo" data-src="https://miladx.com/single-video.mp4" poster="https://miladx.com/poster-image.png" autoplay loop playsinline muted>
+<video class="miladx-lazyvideo" data-src="single-video.mp4" poster="poster-image.png" loop muted playsinline autoplay webkit-playsinline disablepictureinpicture x-webkit-airplay="deny">
   Your browser does not support the video tag.
 </video>
 ```
 
-Step 2: Include the Script
+### Step 2: Include the Script
 Add the script tag to the <head> or <footer> of your HTML file. It's crucial to use the defer attribute, which ensures the script executes only after the entire HTML document has been parsed.
 
 ```
