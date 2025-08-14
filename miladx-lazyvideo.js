@@ -1,4 +1,4 @@
-(function() {
+123(function() {
     const videos = document.querySelectorAll('video.miladx-lazyvideo');
 
     function loadVideo(video) {
