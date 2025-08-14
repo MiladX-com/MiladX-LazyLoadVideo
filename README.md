@@ -44,5 +44,6 @@ Add the script tag to the <head> or <footer> of your HTML file. It's crucial to 
 > [!Note]
 > If you are self-hosting the script, replace the URL with the path to your hosted miladx-lazyvideo.js file.
 
-📝 License
+
+### 📝 License
 This project is licensed under the MIT License.
