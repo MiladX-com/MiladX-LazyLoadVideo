@@ -38,7 +38,7 @@ Use this method if you only need to specify a single video source.
 Add the script tag to the <head> or <footer> of your HTML file. It's crucial to use the defer attribute, which ensures the script executes only after the entire HTML document has been parsed.
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/miladx/miladx-lazyvideo/miladx-lazyvideo.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/MiladX-com/MiladX-LazyVideo@latest/miladx-lazyvideo.js" defer></script>
 ```
 
 > [!Note]
