@@ -1,5 +1,5 @@
 (function() {
-    const videos = document.querySelectorAll('video.miladx-lazyvideo');
+    const videos = document.querySelectorAll('video.miladx-lazyloadvideo');
 
     function loadVideo(video) {
         if (video.dataset.loaded) {
