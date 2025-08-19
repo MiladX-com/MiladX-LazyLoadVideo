@@ -1,5 +1,5 @@
-# MiladX Lazy Video
-miladx-lazyvideo is a lightweight and highly optimized JavaScript solution for lazy-loading videos. This script helps you significantly improve your website's performance by preventing videos from loading during the initial page load. Videos are only loaded and played when they enter the user's viewport.
+# MiladX Lazy Load Video
+MiladX-LazyLoadVideo is a lightweight and highly optimized JavaScript solution for lazy loading videos. This script helps you significantly improve your website's performance by preventing videos from loading during the initial page load. Videos are only loaded and played when they enter the user's viewport.
 
 ## 🚀 Key Features
 Performance-Optimized: Utilizes the native IntersectionObserver API for asynchronous loading, ensuring minimal impact on the browser's main thread and a smooth user experience.
@@ -14,12 +14,12 @@ Transparent Video Support: Easily handles transparent video formats by allowing 
 Follow these two simple steps to integrate the script into your website.
 
 ### Step 1: Add the HTML Markup
-Add the miladx-lazyvideo class to your <video> tag. Instead of using the src attribute, use data-src to specify the video file's URL.
+Add the MiladX-LazyLoadVideo class to your <video> tag. Instead of using the src attribute, use data-src to specify the video file's URL.
 
 #### Method 1: Using the <source> Tag (Recommended)
 This method is ideal for supporting multiple video formats to ensure cross-browser compatibility.
 ```
-<video class="miladx-lazyvideo" poster="poster.png" loop muted playsinline autoplay webkit-playsinline disablepictureinpicture x-webkit-airplay="deny">
+<video class="miladx-lazyloadvideo" poster="poster.png" loop muted playsinline autoplay webkit-playsinline disablepictureinpicture x-webkit-airplay="deny">
   <source data-src="transparent-video.webm" type="video/webm">
   <source data-src="transparent-video.mp4" type='video/mp4; codecs="hvc1"'>
   Your browser does not support the video tag.
@@ -29,7 +29,7 @@ This method is ideal for supporting multiple video formats to ensure cross-brows
 #### Method 2: Using data-src on the <video> Tag
 Use this method if you only need to specify a single video source.
 ```
-<video class="miladx-lazyvideo" data-src="single-video.mp4" poster="poster-image.png" loop muted playsinline autoplay webkit-playsinline disablepictureinpicture x-webkit-airplay="deny">
+<video class="miladx-lazyloadvideo" data-src="single-video.mp4" poster="poster-image.png" loop muted playsinline autoplay webkit-playsinline disablepictureinpicture x-webkit-airplay="deny">
   Your browser does not support the video tag.
 </video>
 ```
@@ -38,11 +38,11 @@ Use this method if you only need to specify a single video source.
 Add the script tag to the <head> or <footer> of your HTML file. It's crucial to use the defer attribute, which ensures the script executes only after the entire HTML document has been parsed.
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/MiladX-com/MiladX-LazyVideo@latest/miladx-lazyvideo.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/MiladX-com/MiladX-LazyLoadVideo@latest/miladx-lazyloadvideo.js" defer></script>
 ```
 
 > [!Note]
-> If you are self-hosting the script, replace the URL with the path to your hosted miladx-lazyvideo.js file.
+> If you are self-hosting the script, replace the URL with the path to your hosted miladx-lazyloadvideo.js file.
 
 
 ### 📝 License
